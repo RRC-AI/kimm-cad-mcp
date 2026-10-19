@@ -1,0 +1,29 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# KIMM-CAD MCP runtime artefacts (created at run time)
+mcp-server/runtime/
+mcp-server/models/
+
+# Drawing converter working folders: keep the folders, never commit drawings or results
+drawing-to-3d/input/*
+!drawing-to-3d/input/.gitkeep
+drawing-to-3d/output/*
+!drawing-to-3d/output/.gitkeep
+
+# CAD data and binaries that must not be published
+*.dwg
+*.FCStd
+*.FCBak
+*.step
+*.stp
+*.stl
+*.exe
+*.msi
+*.mp4
