@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KIMM-CAD V26 MCP 설치 및 실행</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#5d6678; --line:#dfe4ec; --brand:#2563eb; --panel:#f7f9fc; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:#eef2f7; font-family:"Malgun Gothic","Segoe UI",sans-serif; line-height:1.65; }
+    main { width:min(900px,calc(100% - 32px)); margin:42px auto; padding:42px; background:white; border:1px solid var(--line); border-radius:18px; box-shadow:0 12px 35px rgba(23,32,51,.08); }
+    h1 { margin:0 0 8px; font-size:clamp(28px,5vw,42px); line-height:1.2; }
+    .lead { margin:0 0 30px; color:var(--muted); }
+    section { margin-top:18px; padding:22px; background:var(--panel); border:1px solid var(--line); border-radius:14px; }
+    h2 { margin:0 0 12px; font-size:20px; }
+    code { font-family:Consolas,"Courier New",monospace; }
+    pre { margin:10px 0 0; padding:16px; overflow:auto; color:#e8eefc; background:#111827; border-radius:10px; white-space:pre-wrap; }
+    .ok { color:#087443; font-weight:700; }
+    .note { margin-top:22px; padding:16px 18px; color:#344054; background:#eff6ff; border-left:4px solid var(--brand); border-radius:8px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>KIMM-CAD V26 MCP 설치 및 실행</h1>
+    <p class="lead">PowerShell에서 설치한 뒤 Codex와 KIMM-CAD V26을 다시 시작하면 됩니다.</p>
+
+    <section>
+      <h2>1. 프로젝트 폴더로 이동</h2>
+      <pre><code>cd "&lt;배포 폴더&gt;\kimm-cad-mcp_share"</code></pre>
+    </section>
+
+    <section>
+      <h2>2. 설치</h2>
+      <p>ZIP을 완전히 푼 뒤 <code>INSTALL.cmd</code>를 더블클릭합니다. 명령줄에서는 다음과 같습니다.</p>
+      <pre><code>.\INSTALL.cmd</code></pre>
+      <p><span class="ok">SETUP COMPLETE</span>가 표시되면 설치가 끝난 것입니다.</p>
+    </section>
+
+    <section>
+      <h2>3. 다시 시작</h2>
+      <p>Codex와 KIMM-CAD V26을 모두 종료했다가 다시 실행합니다.</p>
+    </section>
+
+    <section>
+      <h2>4. Codex에서 실행</h2>
+      <p>KIMM-CAD V26을 켜 둔 상태에서 Codex에 다음처럼 요청합니다.</p>
+      <pre><code>가로 40mm, 세로 30mm, 높이 20mm 직육면체를 KIMM-CAD에 만들어줘.</code></pre>
+      <p>V26 화면에 모델이 나타나고 <code>cad_status()</code>의 <code>kimm_cad_version</code>이 <code>V26.1</code>이면 정상입니다.</p>
+    </section>
+
+    <div class="note">V26이 기본 경로가 아닌 곳에 설치되어 있다면 <code>KIMM_CAD_EXE</code>에 <code>KIMM-CAD V26.exe</code> 전체 경로를 지정한 뒤 다시 설치하세요. 별도 프로필에는 <code>KIMM_CAD_PROFILE_ROOT</code>를 사용합니다.</div>
+  </main>
+</body>
+</html>

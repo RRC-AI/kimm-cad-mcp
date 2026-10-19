@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "kimm-cad": {
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "C:/path/to/project/kimm-cad-mcp_share/run_server.ps1"
+      ]
+    }
+  }
+}
