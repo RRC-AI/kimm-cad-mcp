@@ -4,6 +4,22 @@
 
 > 한국기계연구원(KIMM) AI Agent 전략연구사업 결과물
 
+## 시연 영상
+
+MCP로 KIMM-CAD V26에 볼트 구멍 4개짜리 원형 플랜지를 만드는 과정입니다.
+
+https://github.com/user-attachments/assets/06a637b9-3590-4a04-92d5-7be058c77afd
+
+## 다운로드
+
+[**Releases**](https://github.com/RRC-AI/kimm-cad-mcp/releases/latest)에서 설치 파일을 받을 수 있습니다.
+
+| 파일 | 내용 |
+|---|---|
+| `KIMM-CAD-V26.1-Setup.zip` | KIMM-CAD V26.1 Windows 64-bit 설치 파일 |
+| `kimm-cad-mcp_share_V26.1.zip` | MCP 서버 설치 패키지 (`mcp-server/`와 동일) |
+| `drawing-to-3d_share_V26.1.zip` | 도면 → 3D 변환기 설치 패키지 (`drawing-to-3d/`와 동일) |
+
 ## 구성
 
 ```
