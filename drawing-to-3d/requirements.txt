@@ -1,0 +1,4 @@
+ezdxf
+cadquery
+ifcopenshell
+pymupdf
