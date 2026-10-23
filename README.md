@@ -10,15 +10,24 @@ MCP로 KIMM-CAD V26에 볼트 구멍 4개짜리 원형 플랜지를 만드는 �
 
 https://github.com/user-attachments/assets/06a637b9-3590-4a04-92d5-7be058c77afd
 
-## 다운로드
+## 다운로드 — 이충성 박사님 송부 원본
 
-[**Releases**](https://github.com/RRC-AI/kimm-cad-mcp/releases/latest)에서 설치 파일을 받을 수 있습니다.
+[**Releases v26.1**](https://github.com/RRC-AI/kimm-cad-mcp/releases/tag/v26.1)에서 **2026년 10월 9일 이충성 박사님이 메일로 송부한 원본 첨부파일 6개**를 받을 수 있습니다. 파일 내용은 수정하거나 재압축하지 않았으며, 메일 원본과 GitHub 배포 파일의 SHA-256이 모두 일치하는 것을 확인했습니다.
 
-| 파일 | 내용 |
-|---|---|
-| `KIMM-CAD-V26.1-Setup.zip` | KIMM-CAD V26.1 Windows 64-bit 설치 파일 |
-| `kimm-cad-mcp_share_V26.1.zip` | MCP 서버 설치 패키지 (`mcp-server/`와 동일) |
-| `drawing-to-3d_share_V26.1.zip` | 도면 → 3D 변환기 설치 패키지 (`drawing-to-3d/`와 동일) |
+GitHub의 파일명 정규화로 한글·공백이 포함된 파일은 다운로드용 이름만 ASCII로 정리했습니다. 아래 표에서 메일 원본 파일명과 대응 관계를 확인할 수 있습니다.
+
+| 메일 원본 파일명 | 다운로드 | 내용 |
+|---|---|---|
+| `KIMM-CAD-V26.1-Setup.zip` | [`KIMM-CAD-V26.1-Setup.zip`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/KIMM-CAD-V26.1-Setup.zip) | KIMM-CAD V26.1 설치 파일 |
+| `kimm-cad-mcp_share_V26.zip` | [`kimm-cad-mcp_share_V26.zip`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/kimm-cad-mcp_share_V26.zip) | KIMM-CAD MCP 원본 배포 패키지 |
+| `실행 동영상.zip` | [`execution-videos.zip`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/execution-videos.zip) | 원본 실행 동영상 |
+| `도면3D변환기_share_V26.zip` | [`drawing-to-3d_share_V26.zip`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/drawing-to-3d_share_V26.zip) | 도면3D변환기 원본 배포 패키지 |
+| `KIMM-CAD MCP 사용 메뉴얼.pdf` | [`KIMM-CAD-MCP-Manual.pdf`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/KIMM-CAD-MCP-Manual.pdf) | MCP 설치·사용 메뉴얼 |
+| `2D to 3D 프롬프트.txt` | [`2D-to-3D-prompt.txt`](https://github.com/RRC-AI/kimm-cad-mcp/releases/download/v26.1/2D-to-3D-prompt.txt) | 2D → 3D 예제 프롬프트 |
+
+설치와 사용은 위 원본 **PDF 메뉴얼 및 각 ZIP 내부의 설명자료**를 따르세요. 파일별 SHA-256은 [릴리스 설명](https://github.com/RRC-AI/kimm-cad-mcp/releases/tag/v26.1)에 있습니다.
+
+기존의 재구성 패키지 `kimm-cad-mcp_share_V26.1.zip`과 `drawing-to-3d_share_V26.1.zip`은 메일 원본과 혼동되지 않도록 릴리스에서 제외했습니다. 이 저장소의 `mcp-server/`·`drawing-to-3d/` 소스코드와 원본 배포 ZIP이 동일한 파일 구성이라는 뜻은 아닙니다. 아래 구성·요구 사항·빠른 시작은 **저장소 소스코드 기준**입니다.
 
 ## 구성
 
@@ -47,7 +56,7 @@ kimm-cad-mcp/
 - MCP 클라이언트 (Codex, Claude Code 등)
 - DWG 입력 시 [ODA File Converter](https://www.opendesign.com/guestfiles/oda_file_converter) 별도 설치
 
-## 빠른 시작
+## 빠른 시작 — 저장소 소스코드 기준
 
 ### 1. MCP 서버
 
